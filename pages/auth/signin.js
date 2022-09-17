@@ -5,6 +5,7 @@ import {
 } from "next-auth/react";
 
 function signIn({ providers }) {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { data: session, status } = useSession();
 
   console.log(session);
